@@ -4,7 +4,7 @@ The purpose of this analysis is to determine the scope of the 'MechaCar' product
 ## Linear Regression to Predict MPG
 In order to predict the mpg of MechaCar prototypes, a Multiple Linear Regression was performed using the following metrics: vehicle length,  vehicle weight, spoiler angle, ground clearance and AWD.
 ### Linear Regression Output
-![Deliverable 1 Linear Regression Output]() 
+![Deliverable 1 Linear Regression Output](https://github.com/rabascoh/auto-analysis/blob/main/Resources/D1_LinearRegressionOutput.png) 
 ### Results
 1. Vehicle length (*p* < .001) and ground clearance (*p* < .001) have a significant impact on mpg (i.e., provide a non-random amount of variance to the mpg values in the dataset based on our assumed significance level of 0.05). 
 2. The p-value of our linear regression analysis is 5.35e-11, which is much smaller than our assumed significance level of 0.05. Therefore, we can state that there is sufficient evidence to reject our null hypothesis, which means that the slope of our linear model is not zero.
