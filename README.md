@@ -11,13 +11,14 @@ In order to predict the mpg of MechaCar prototypes, a Multiple Linear Regression
 3. Despite vehicle length and ground clearance having a significant impact on mpg,the lack of significant variables is evidence of overfitting. Overfitting means that the performance of a model performs well with a current dataset, but fails to generalize and predict future data correctly. 
 
 ## Summary Statistics on Suspension Coils
-Summary
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The following descriptive statistics determine whether MechaCar suspension coil variance falls withiin the design specifications. 
 ### Total Summary
 ![Deliverable 2 Total Summary Output]() 
 ### Lot Summary
 ![Deliverable 2 Lot Summary Output]() 
 ### Results
-1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+1. The overall variance of MechaCar suspension coils meets the design specification at 62.29 PSI. 
+2. The variance of MechaCar suspension coils does not meet the design specification for all lots. Lot 1 (0.98 PSI) and lot 2 (7.47 PSI) meet the design specification, however lot 3 exceeds 100 PSI at at 170.29 PSI. 
 
 ## T-Tests on Suspension Coils
 Summary 
