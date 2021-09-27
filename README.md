@@ -22,17 +22,21 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 ## T-Tests on Suspension Coils
 Summary 
-![Deliverable 3 T-Test Output 1]() 
-![Deliverable 3 T-Test Output 2]() 
-![Deliverable 3 T-Test Output 3]() 
-![Deliverable 3 T-Test Output 4]() 
+![Deliverable 3 Overall T-Test Output]() 
+![Deliverable 3 Lot 1 T-Test Output]() 
+![Deliverable 3 Lot 2 T-Test Output]() 
+![Deliverable 3 Lot 3 T-Test Output]() 
 ### Results
-1. Across all lots
-2. For each lot
+1. There is no significant difference between MechaCar PSI overall (*p* = 0.06) and the population mean based on our assumed significance level of 0.05. 
+2. There is no significant difference between Lot 1 PSI (*p* = 1.00) and the population mean based on our assumed significance level of 0.05. 
+3. There is no significant difference between Lot 2 PSI (*p* = 0.61) and the population mean based on our assumed significance level of 0.05. 
+4. There is a significant difference between Lot 3 PSI (*p* = 0.04) and the population mean based on our assumed significance level of 0.05. Lot 3 PSI falls below the population mean of 1500. 
 
 ## Study Design: MechaCar vs Competition
-Summary
-1. What metric or metrics are you going to test?
-2. What is the null hypothesis or alternative hypothesis?
-3. What statistical test would you use to test the hypothesis? And why?
-4. What data is needed to run the statistical test?
+To determine how MechaCar performs compared to the competition, we recommend exploreing mpg differences between MechaCar and its key competitors. 
+1. Metric: mpg
+2. Hypotheses:
+H0: There are no differences between mpg for MechaCar and its key competitors. 
+H1: MechaCar has significantly higher mpg compared to its key competitors. 
+3. Statistical Test: We recommend using an ANOVA to test the differences in mpg for MechaCar and its various competitors. An ANOVA will allow us to determine whether there is a statistical difference between the distribution of means for multiple samples. To determine which car brand(s) is driving the statistical difference, we recommend performing a Bonferroni post-hoc analysis. 
+4. Data Required: In order to perform the ANOVA, we will need mpg data for MechaCar as well as its key competitors. The car brand (independent variable)will need to be categorical, and mpg (dependent variable) will need to be continuous. 
