@@ -8,7 +8,7 @@ In order to predict the mpg of MechaCar prototypes, a Multiple Linear Regression
 ### Results
 1. Vehicle length (*p* < .001) and ground clearance (*p* < .001) have a significant impact on mpg (i.e., provide a non-random amount of variance to the mpg values in the dataset based on our assumed significance level of 0.05). 
 2. The p-value of our linear regression analysis is 5.35e-11, which is much smaller than our assumed significance level of 0.05. Therefore, we can state that there is sufficient evidence to reject our null hypothesis, which means that the slope of our linear model is not zero.
-3. Despite vehicle length and ground clearance having a significant impact on mpg,the lack of significant variables is evidence of overfitting. Overfitting means that the performance of a model performs well with a current dataset, but fails to generalize and predict future data correctly. 
+3. Despite vehicle length and ground clearance having a significant impact on mpg, the lack of significant variables is evidence of overfitting. This indicates that although the performance of a model performs well with a current dataset, it will likely fail to generalize and predict future data correctly. 
 
 ## Summary Statistics on Suspension Coils
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The following descriptive statistics determine whether MechaCar suspension coil variance falls within the design specifications. 
@@ -21,11 +21,15 @@ The design specifications for the MechaCar suspension coils dictate that the var
 2. The variance of MechaCar suspension coils does not meet the design specification for all lots. Lot 1 (0.98 PSI) and lot 2 (7.47 PSI) meet the design specification, however lot 3 exceeds 100 PSI at at 170.29 PSI. 
 
 ## T-Tests on Suspension Coils
-Summary 
-![Deliverable 3 Overall T-Test Output]() 
-![Deliverable 3 Lot 1 T-Test Output]() 
-![Deliverable 3 Lot 2 T-Test Output]() 
-![Deliverable 3 Lot 3 T-Test Output]() 
+The following analyses were performed in order to determine whether there are significant differences between the population mean of 1,500 pounds per square inch (PSI) and MechaCar overall as well as the lots. 
+### Overall
+![Deliverable 3 Overall T-Test Output](https://github.com/rabascoh/auto-analysis/blob/main/Resources/D3_Overall.png) 
+### Lot 1
+![Deliverable 3 Lot 1 T-Test Output](https://github.com/rabascoh/auto-analysis/blob/main/Resources/D3_Lot1.png) 
+### Lot 2
+![Deliverable 3 Lot 2 T-Test Output](https://github.com/rabascoh/auto-analysis/blob/main/Resources/D3_Lot2.png) 
+### Lot 3
+![Deliverable 3 Lot 3 T-Test Output](https://github.com/rabascoh/auto-analysis/blob/main/Resources/D3_Lot3.png) 
 ### Results
 1. There is no significant difference between MechaCar PSI overall (*p* = 0.06) and the population mean based on our assumed significance level of 0.05. 
 2. There is no significant difference between Lot 1 PSI (*p* = 1.00) and the population mean based on our assumed significance level of 0.05. 
@@ -35,8 +39,8 @@ Summary
 ## Study Design: MechaCar vs Competition
 To determine how MechaCar performs compared to the competition, we recommend exploreing mpg differences between MechaCar and its key competitors. 
 1. Metric: mpg
-2. Hypotheses:
-H0: There are no differences between mpg for MechaCar and its key competitors. 
+2. Hypotheses:<br/>
+H0: There are no differences between mpg for MechaCar and its key competitors. <br/>
 H1: MechaCar has significantly higher mpg compared to its key competitors. 
 3. Statistical Test: We recommend using an ANOVA to test the differences in mpg for MechaCar and its various competitors. An ANOVA will allow us to determine whether there is a statistical difference between the distribution of means for multiple samples. To determine which car brand(s) is driving the statistical difference, we recommend performing a Bonferroni post-hoc analysis. 
 4. Data Required: In order to perform the ANOVA, we will need mpg data for MechaCar as well as its key competitors. The car brand (independent variable)will need to be categorical, and mpg (dependent variable) will need to be continuous. 
